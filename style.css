@@ -14,9 +14,17 @@ header > h2{
 }
 
 .button{
-    text-align: center;
     padding: 2vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
+
+@media (max-width: 800px) {
+    .button {
+      flex-direction: column;
+    }
+  }
 
 input[type=button]{
     background-color: transparent;
